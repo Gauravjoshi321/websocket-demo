@@ -19,6 +19,6 @@ websocket.on("request", request => {
   connection.on("message", message => {
 
     console.log(`Received message ${message.utf8Data}`)
-    // connection.send(`got your message: ${message.utf8Data}`)
+    connection.send(`got your message: ${message.utf8Data}`)
   })
 })
